@@ -22,10 +22,15 @@
     "npm": ">=10"
   },
   "scripts": {
-    "start": "serve"
+    "start": "serve",
+    "test": "npx selenium-side-runner --output-directory=./tests/test-reports tests/test.side"
   },
   "dependencies": {
     "path-framework": "0.8.0-beta.8",
     "serve": "14.2.4"
+  },
+  "devDependencies": {
+    "chromedriver": "^130.0.2",
+    "selenium-side-runner": "^4.0.12"
   }
 }
