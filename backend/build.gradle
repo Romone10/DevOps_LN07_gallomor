@@ -1,9 +1,9 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.2.1'
-	id 'io.spring.dependency-management' version '1.1.4'
+	id 'org.springframework.boot' version '3.3.5'
+	id 'io.spring.dependency-management' version '1.1.6'
 	id 'jacoco'
-	id 'org.sonarqube' version '4.4.1.3373'
+	id 'org.sonarqube' version '5.1.0.4882'
 }
 
 group = 'ch.zhaw.iwi.devops'
@@ -35,7 +35,8 @@ test {
 jacocoTestReport {
 	reports {
 		xml.required = true
-		csv.required = false 
-		xml.destination(file("${rootProject.projectDir}/target/site/jacoco/cov.xml"))
+		html.required = true
+ 		xml.destination(file("${rootProject.projectDir}/target/site/jacoco/cov.xml"))
+		html.destination(file("${rootProject.projectDir}/target/site/jacoco/html"))
 	}
 }
