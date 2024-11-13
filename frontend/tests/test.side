@@ -102,7 +102,15 @@
         ["xpath=//form/input", "xpath:position"]
       ],
       "value": "A unique 71382 String!"
-    }, {
+    },
+     {
+      "id": "1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.tile-wet-asphalt",
+      "value": "10000"
+    },
+     {
       "id": "31c1d4cb-9ab2-4b35-86dd-ce8dca00ab43",
       "comment": "",
       "command": "click",
