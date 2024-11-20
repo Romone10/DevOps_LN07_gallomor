@@ -102,15 +102,14 @@
         ["xpath=//form/input", "xpath:position"]
       ],
       "value": "A unique 71382 String!"
-    },
-     {
+    }, {
       "id": "1",
       "comment": "",
       "command": "waitForElementVisible",
       "target": "css=.tile-wet-asphalt",
+      "targets": [],
       "value": "10000"
-    },
-     {
+    }, {
       "id": "31c1d4cb-9ab2-4b35-86dd-ce8dca00ab43",
       "comment": "",
       "command": "click",
@@ -134,6 +133,17 @@
       ],
       "value": ""
     }, {
+      "id": "8f06de21-332d-4876-ae28-799665194fe1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-title > .h4",
+      "targets": [
+        ["css=.card-title > .h4", "css:finder"],
+        ["xpath=//path-framework[@id='app']/path-application/div/div/div/div/div/span[3]/span/span/path-list/span/span/div/div/span/div", "xpath:idRelative"],
+        ["xpath=//div/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
       "id": "c5e99754-9cb3-4251-9393-cd9eb05940bc",
       "comment": "",
       "command": "click",
@@ -143,6 +153,13 @@
         ["xpath=//div[@id='myModal']/div/path-form/div/form/div[2]/button[2]/span", "xpath:idRelative"],
         ["xpath=//div[2]/button[2]/span", "xpath:position"]
       ],
+      "value": ""
+    }, {
+      "id": "1f5304c7-c590-4316-a985-e68f8ef45c3d",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//span[7]/path-button-group/span/div/span/span/path-button/a/div/div",
+      "targets": [],
       "value": ""
     }]
   }],
