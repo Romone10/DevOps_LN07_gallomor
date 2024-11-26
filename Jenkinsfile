@@ -27,12 +27,12 @@ pipeline {
         stage('Sonar') { 
             steps {
                 sh 'echo sonar'
-                withCredentials([string(credentialsId: 'sonarqube-backend', variable: 'TOKEN')]) {
+                withCredentials([string(credentialsId: 'Sonarqube-Backend', variable: 'TOKEN')]) {
                     dir('backend') {
                         sh './gradlew sonar -Dsonar.projectKey=DevOpsDemo-Backend -Dsonar.projectName=\'DevOpsDemo-Backend\' -Dsonar.host.url=http://sonarqube:9000 -Dsonar.token=$TOKEN'    
                     }                    
                 }
-                withCredentials([string(credentialsId: 'sonarqube-frontend', variable: 'TOKEN')]) {
+                withCredentials([string(credentialsId: 'Sonarqube-Frontend', variable: 'TOKEN')]) {
                     dir('backend') {
                         sh 'npx sonar-scanner -Dsonar.host.url=http://sonarqube:9000 -Dsonar.projectKey=DevOpsDemo-Frontend -Dsonar.projectName=\'DevOpsDemo-Frontend\' -Dsonar.token=$TOKEN'    
                     }                    
