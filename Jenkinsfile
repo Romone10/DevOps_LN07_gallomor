@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') { 
             steps {
                 sh 'echo checkout'
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'ba84ca1f-cbe4-48f7-83f7-d99f79c7f000', url: 'https://github.com/devopszhaw/DevOps-03-DevOpsDemo']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitHub-mosazhaw', url: 'https://github.com/devopszhaw/DevOps-03-DevOpsDemo']])
             }
         }
         stage('Build') { 
