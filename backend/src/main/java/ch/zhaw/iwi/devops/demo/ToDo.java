@@ -2,24 +2,24 @@ package ch.zhaw.iwi.devops.demo;
 
 public class ToDo {
 
-    private int id;
+    private Integer id;
     private String title;
     private String description;
 
     public ToDo() {
     }
     
-    public ToDo(int id, String title, String description) {
+    public ToDo(Integer id, String title, String description) {
         this.id = id;
         this.title = title;
         this.description = description;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }    
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

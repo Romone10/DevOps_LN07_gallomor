@@ -1,8 +1,11 @@
-FROM openjdk:21-jdk-slim
+# docker build -t mosazhaw/devopsdemo .
+# docker run -p 9001:8080 --name dockerize-devopsdemo -d mosazhaw/devopsdemo
+
+FROM eclipse-temurin:25-jdk-noble
 RUN apt-get update && apt-get install -y curl \
   && curl -sL https://deb.nodesource.com/setup_20.x | bash - \
   && apt-get install -y nodejs \
-  && curl -L https://www.npmjs.com/install.sh | npm_install="10.9.0" | sh
+  && curl -L https://www.npmjs.com/install.sh | npm_install="11.6.2" | sh
 RUN apt-get update && apt-get install -y python3.10
 
 WORKDIR /usr/src/app
