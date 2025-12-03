@@ -60,7 +60,7 @@ public class ToDoController {
             entry.setTooltip(todo.getDescription());
             result.add(entry);
         }
-        return result;
+        return result.stream().sorted(Comparator.comparing(PathListEntry::getName)).toList();
     }
 
     @GetMapping("/services/todo/{key}")
