@@ -1,0 +1,49 @@
+html, body {
+  background: #d8e8ff !important;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+.dashboard-shell,
+.subpage-shell,
+.dashboard-footer,
+.exam-item {
+  text-align: center;
+}
+
+.dashboard-shell {
+  padding-top: 24px;
+}
+
+.dashboard-title {
+  margin: 0;
+}
+
+.dashboard-subtitle {
+  margin: 8px 0 20px 0;
+}
+
+.dashboard-footer {
+  margin-top: 28px;
+  font-size: 14px;
+}
+
+.subpage-title {
+  margin: 16px 0;
+}
+
+.exam-item {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+button,
+.btn,
+[class*='button'],
+a.btn {
+  display: inline-block;
+}

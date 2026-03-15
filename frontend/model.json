@@ -1,0 +1,251 @@
+{
+  "application": {
+    "title": "DevOpsDemo FS26",
+    "formList": [
+      {
+        "id": "OwnUserForm",
+        "title": "NotImplemented",
+        "formFieldList": [
+          {
+            "type": "okButton",
+            "name": "Ok"
+          }
+        ]
+      },
+      {
+        "id": "NotImplementedForm",
+        "title": "Not Implemented",
+        "url": "/dummyform",
+        "headerVisible": false,
+        "footerVisible": false,
+        "borderStyle": "None",
+        "formFieldList": [
+          {
+            "id": "NotImplemented",
+            "type": "label",
+            "name": "NotImplementedMessage",
+            "width": 2
+          },
+          {
+            "type": "okButton",
+            "name": "Ok"
+          }
+        ]
+      },
+      {
+        "id": "NotImplementedFormModal",
+        "title": "NotImplemented",
+        "url": "/dummyform",
+        "formFieldList": [
+          {
+            "id": "NotImplemented",
+            "type": "label",
+            "name": "NotImplementedMessage",
+            "width": 2
+          },
+          {
+            "type": "okButton",
+            "name": "Ok"
+          }
+        ]
+      },
+      {
+        "id": "ToDoForm",
+        "title": { "default": "ToDo" },
+        "url": "/todo",
+        "formFieldList": [
+          {
+            "id": "title",
+            "type": "text",
+            "name": { "default": "Titel" },
+            "required": true,
+            "width": 2
+          },
+          {
+            "id": "description",
+            "type": "text",
+            "name": { "default": "Text" },
+            "newRow": true,
+            "maxLength": 4000,
+            "height": 4,
+            "width": 2
+          },
+          {
+            "type": "deleteButton",
+            "name": "Delete"
+          },
+          {
+            "type": "cancelButton",
+            "name": "Cancel"
+          },
+          {
+            "type": "okButton",
+            "name": "Ok"
+          }
+        ]
+      },
+      {
+        "id": "ModuleForm",
+        "title": "Module",
+        "formFieldList": [
+          {
+            "id": "title",
+            "type": "text",
+            "name": { "default": "Titel" },
+            "required": true,
+            "width": 2
+          },
+          {
+            "id": "description",
+            "type": "text",
+            "name": { "default": "Beschreibung" },
+            "newRow": true,
+            "maxLength": 4000,
+            "height": 4,
+            "width": 2
+          },
+          {
+            "type": "deleteButton",
+            "name": "Delete"
+          },
+          {
+            "type": "cancelButton",
+            "name": "Cancel"
+          },
+          {
+            "type": "okButton",
+            "name": "Ok"
+          }
+        ]
+      }
+    ],
+    "pageList": [
+      {
+        "id": "mainmenu",
+        "name": "MainMenu",
+        "elementList": [
+          {
+            "type": "pageLabel",
+            "value": "<div class='dashboard-shell'><h3 class='dashboard-title'>Willkommen bei DevOps</h3><p class='dashboard-subtitle'>Dashboard</p></div>",
+            "newRow": true
+          },
+          {
+            "type": "button",
+            "name": { "default": "ToDo-List" },
+            "icon": "fa-file-alt",
+            "color": "wet-asphalt",
+            "page": "toDoPage",
+            "width": 2,
+            "newRow": true
+          },
+          {
+            "type": "button",
+            "name": { "default": "Module" },
+            "icon": "fa-file-alt",
+            "color": "wet-asphalt",
+            "page": "modulePage",
+            "width": 2
+          },
+          {
+            "type": "button",
+            "name": { "default": "Exams" },
+            "icon": "fa-file-alt",
+            "color": "wet-asphalt",
+            "page": "examPage",
+            "width": 2
+          },
+          {
+            "type": "pageLabel",
+            "value": "<div class='dashboard-footer'>by Moreno Gallo - gallomor</div>",
+            "newRow": true
+          }
+        ]
+      },
+      {
+        "id": "toDoPage",
+        "elementList": [
+          {
+            "type": "pageLabel",
+            "value": "<div class='subpage-shell'><h4 class='subpage-title'>ToDo List</h4></div>",
+            "newRow": true
+          },
+          {
+            "type": "backbutton"
+          },
+          {
+            "type": "newButton",
+            "name": { "default": "Neues ToDo" },
+            "icon": "fa-user",
+            "color": "green",
+            "width": 2,
+            "form": {
+              "form": "ToDoForm"
+            }
+          },
+          {
+            "type": "list",
+            "name": "ToDo",
+            "icon": "fa-user",
+            "color": "wet-asphalt",
+            "search": true,
+            "url": "/todo",
+            "form": {
+              "form": "ToDoForm"
+            }
+          }
+        ]
+      },
+      {
+        "id": "modulePage",
+        "elementList": [
+          {
+            "type": "pageLabel",
+            "value": "<div class='subpage-shell'><h4 class='subpage-title'>Module</h4></div>",
+            "newRow": true
+          },
+          {
+            "type": "backbutton"
+          },
+          {
+            "type": "newButton",
+            "name": { "default": "Neues Modul" },
+            "icon": "fa-user",
+            "color": "green",
+            "width": 2,
+            "form": {
+              "form": "ModuleForm"
+            }
+          }
+        ]
+      },
+      {
+        "id": "examPage",
+        "elementList": [
+          {
+            "type": "pageLabel",
+            "value": "<div class='subpage-shell'><h4 class='subpage-title'>Exams</h4></div>",
+            "newRow": true
+          },
+          {
+            "type": "backbutton"
+          },
+          {
+            "type": "pageLabel",
+            "value": "<div class='exam-item'><strong>Mathematik 2</strong> - 20.06.2026</div>",
+            "newRow": true
+          },
+          {
+            "type": "pageLabel",
+            "value": "<div class='exam-item'><strong>Software Engineering</strong> - 25.06.2026</div>",
+            "newRow": true
+          },
+          {
+            "type": "pageLabel",
+            "value": "<div class='exam-item'><strong>Datenbanken</strong> - 01.07.2026</div>",
+            "newRow": true
+          }
+        ]
+      }
+    ]
+  }
+}
