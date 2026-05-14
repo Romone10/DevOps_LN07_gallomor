@@ -9,6 +9,25 @@
       "name": "Test",
       "commands": [
         {
+<<<<<<< HEAD
+=======
+          "id": "a49037c3-0929-4f66-b951-d009cf82aeaf",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1461e2b5-6f97-416f-b7f0-587c7124cdea",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "992x857",
+          "targets": [],
+          "value": ""
+        },
+        {
+>>>>>>> ffd0a9bbeee353cc8bea75b0332aef20ad0a97c0
           "comment": "",
           "command": "waitForElementVisible",
           "target": "css=.card-body",
@@ -124,7 +143,11 @@
               "xpath:position"
             ]
           ],
+<<<<<<< HEAD
           "value": "GALLOMOR SCREENCAST"
+=======
+          "value": "A unique 71382 String!"
+>>>>>>> ffd0a9bbeee353cc8bea75b0332aef20ad0a97c0
         },
         {
           "id": "9fae656b-2a71-4fa9-a8b6-cb2a096fdec6",
@@ -199,7 +222,11 @@
               "xpath:position"
             ]
           ],
+<<<<<<< HEAD
           "value": "GALLOMOR SCREENCAST"
+=======
+          "value": "A unique 71382 String!"
+>>>>>>> ffd0a9bbeee353cc8bea75b0332aef20ad0a97c0
         },
         {
           "id": "1",
@@ -382,6 +409,7 @@
               "xpath:position"
             ]
           ],
+<<<<<<< HEAD
           "value": "GALLOMOR SCREENCAST"
         },
         {
@@ -615,6 +643,38 @@
               "xpath:idRelative"
             ]
           ]
+=======
+          "value": "A unique 71382 String!"
+        },
+        {
+          "id": "72531458-bb0e-44b3-9e26-f9355ddda1c6",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "xpath=//span[2]/path-button-group/span/div/span/span/path-button/a/div",
+          "targets": [],
+          "value": "10000"
+        },
+        {
+          "id": "da2129c5-9f69-485c-b9dd-914619022cb3",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "xpath=//span[2]/path-button-group/span/div/span/span/path-button/a/div",
+          "targets": [
+            [
+              "css=span:nth-child(2) > path-button-group .card-body",
+              "css:finder"
+            ],
+            [
+              "xpath=//path-framework[@id='app']/path-application/div/div/div/div/div/span[3]/span/span/path-list/span/span[2]/path-button-group/span/div/span/span/path-button/a/div",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//span[2]/path-button-group/span/div/span/span/path-button/a/div",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+>>>>>>> ffd0a9bbeee353cc8bea75b0332aef20ad0a97c0
         }
       ]
     }

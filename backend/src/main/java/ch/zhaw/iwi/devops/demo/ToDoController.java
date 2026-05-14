@@ -15,7 +15,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.RequestParam;
+=======
+>>>>>>> ffd0a9bbeee353cc8bea75b0332aef20ad0a97c0
 import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin
@@ -36,7 +39,11 @@ public class ToDoController {
 
     @GetMapping("/test")
     public String test() {
+<<<<<<< HEAD
         return "ToDo app - by gallomor";
+=======
+        return "ToDo app is up and running!";
+>>>>>>> ffd0a9bbeee353cc8bea75b0332aef20ad0a97c0
     }
 
     @GetMapping("/services/ping")
@@ -87,6 +94,7 @@ public class ToDoController {
         return this.todos.remove(key);
     }
 
+<<<<<<< HEAD
     @GetMapping("/services/todo/all")
     public List<ToDo> getAllTodos() {
         return this.todos.values().stream()
@@ -123,3 +131,7 @@ public class ToDoController {
         return "Init data reset complete";
     }
 }
+=======
+
+}
+>>>>>>> ffd0a9bbeee353cc8bea75b0332aef20ad0a97c0
