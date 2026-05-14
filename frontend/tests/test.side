@@ -9,22 +9,6 @@
       "name": "Test",
       "commands": [
         {
-          "id": "a49037c3-0929-4f66-b951-d009cf82aeaf",
-          "comment": "",
-          "command": "open",
-          "target": "/",
-          "targets": [],
-          "value": ""
-        },
-        {
-          "id": "1461e2b5-6f97-416f-b7f0-587c7124cdea",
-          "comment": "",
-          "command": "setWindowSize",
-          "target": "992x857",
-          "targets": [],
-          "value": ""
-        },
-        {
           "comment": "",
           "command": "waitForElementVisible",
           "target": "css=.card-body",
@@ -140,7 +124,7 @@
               "xpath:position"
             ]
           ],
-          "value": "A unique 71382 String!"
+          "value": "GALLOMOR SCREENCAST"
         },
         {
           "id": "9fae656b-2a71-4fa9-a8b6-cb2a096fdec6",
@@ -215,7 +199,7 @@
               "xpath:position"
             ]
           ],
-          "value": "A unique 71382 String!"
+          "value": "GALLOMOR SCREENCAST"
         },
         {
           "id": "1",
@@ -398,36 +382,239 @@
               "xpath:position"
             ]
           ],
-          "value": "A unique 71382 String!"
+          "value": "GALLOMOR SCREENCAST"
         },
         {
-          "id": "72531458-bb0e-44b3-9e26-f9355ddda1c6",
-          "comment": "",
-          "command": "waitForElementNotPresent",
-          "target": "xpath=//span[2]/path-button-group/span/div/span/span/path-button/a/div",
-          "targets": [],
-          "value": "10000"
-        },
-        {
-          "id": "da2129c5-9f69-485c-b9dd-914619022cb3",
-          "comment": "",
-          "command": "assertElementNotPresent",
-          "target": "xpath=//span[2]/path-button-group/span/div/span/span/path-button/a/div",
-          "targets": [
+          "command": "click",
+          "target": "css=.tile-green",
+          "value": "",
+          "id": "07260be5-3ed3-4c8d-9842-e5781e3181cb",
+          "fallbackTargets": [
             [
-              "css=span:nth-child(2) > path-button-group .card-body",
+              "css=.tile-green",
               "css:finder"
             ],
             [
-              "xpath=//path-framework[@id='app']/path-application/div/div/div/div/div/span[3]/span/span/path-list/span/span[2]/path-button-group/span/div/span/span/path-button/a/div",
+              "xpath=(//path-framework[@id='app']/path-application/div/div/div/div/div/span[3]/span/span/path-button-group/span/div/span/span/path-button/a/div)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=.ng-invalid",
+          "value": "GALLOMOR SCREENCAST",
+          "id": "527c39f5-c709-453a-bff4-f1cd80f651d4",
+          "fallbackTargets": [
+            [
+              "css=.ng-invalid",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@type='text'])[3]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='myModal']/div/path-form/div/form/div[2]/div/span/span/path-textfield/span/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.btn:nth-child(3) > .path-default-font",
+          "value": "",
+          "id": "a9bb55a6-7da5-44ba-b70f-0bf20a89d166",
+          "fallbackTargets": [
+            [
+              "css=.btn:nth-child(3) > .path-default-font",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='myModal']/div/path-form/div/form/div[3]/button[3]/span)[1]",
               "xpath:idRelative"
             ],
             [
-              "xpath=//span[2]/path-button-group/span/div/span/span/path-button/a/div",
-              "xpath:position"
+              "xpath=//span[contains(.,'OK')]",
+              "xpath:innerText"
             ]
-          ],
-          "value": ""
+          ]
+        },
+        {
+          "command": "assertElementPresent",
+          "target": "css=.tile-wet-asphalt",
+          "value": "",
+          "id": "40da1ab3-29e1-42b9-876a-559b351660e7",
+          "fallbackTargets": [
+            [
+              "css=.tile-wet-asphalt",
+              "css:finder"
+            ],
+            [
+              "xpath=(//path-framework[@id='app']/path-application/div/div/div/div/div/span[4]/span/span/path-list/span/span[3]/path-button-group/span/div/span/span/path-button/a/div)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8e5d1991-4a88-4a21-8832-e2ad26ff7119",
+      "name": "Screencast",
+      "commands": [
+        {
+          "id": "49b18950-c4ef-459a-bba3-65ce4b20a500",
+          "command": "click",
+          "target": "css=span:nth-child(1) > span:nth-child(1) > span:nth-child(1) .card-body:nth-child(1)",
+          "value": "",
+          "fallbackTargets": [
+            [
+              "css=span:nth-child(1) > span:nth-child(1) > span:nth-child(1) .card-body:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//path-framework[@id='app']/path-application/div/div/div/div[2]/div/span/span/span/path-button-group/span/div/span/span/path-button/a/div)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "waitForElementPresent",
+          "target": "",
+          "value": "",
+          "id": "b78b6c1e-90ec-4cb5-9c00-4ef19dd19579"
+        },
+        {
+          "command": "click",
+          "target": "css=.tile-green",
+          "value": "",
+          "id": "1dac5e92-52aa-408d-8b45-94059f72318d",
+          "fallbackTargets": [
+            [
+              "css=.tile-green",
+              "css:finder"
+            ],
+            [
+              "xpath=(//path-framework[@id='app']/path-application/div/div/div/div/div/span[3]/span/span/path-button-group/span/div/span/span/path-button/a/div)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=.ng-invalid",
+          "value": "GALLOMOR",
+          "id": "883ffdb8-5aa9-49eb-be8e-4867b9d593b0",
+          "fallbackTargets": [
+            [
+              "css=.ng-invalid",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@type='text'])[3]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='myModal']/div/path-form/div/form/div[2]/div/span/span/path-textfield/span/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=.col-sm-10 > .ng-untouched",
+          "value": "GALLOMOR SCREENCAST",
+          "id": "cba2e34a-abc3-480a-986e-d6fd4cb4984a",
+          "fallbackTargets": [
+            [
+              "css=.col-sm-10 > .ng-untouched",
+              "css:finder"
+            ],
+            [
+              "xpath=(//textarea[@type='text'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='myModal']/div/path-form/div/form/div[2]/div[2]/span/span/path-textfield/span/div/textarea)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.btn:nth-child(3)",
+          "value": "",
+          "id": "65e3147a-5a08-467c-bc41-b197e36af1a4",
+          "fallbackTargets": [
+            [
+              "css=.btn:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='myModal']/div/path-form/div/form/div[3]/button[3])[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[contains(.,'Ok')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.form-control:nth-child(1)",
+          "value": "",
+          "id": "783a4fde-b0cf-4102-afeb-118a618883bc",
+          "fallbackTargets": [
+            [
+              "css=.form-control:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='search'])[2]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//path-framework[@id='app']/path-application/div/div/div/div/div/span[4]/span/span/path-list/span/span/div/div/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=.form-control:nth-child(1)",
+          "value": "GALLOMOR",
+          "id": "0209f03a-0fcc-457d-b2e2-a05d22d696b6",
+          "fallbackTargets": [
+            [
+              "css=.form-control:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='search'])[2]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//path-framework[@id='app']/path-application/div/div/div/div/div/span[4]/span/span/path-list/span/span/div/div/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "assertElementPresent",
+          "target": "css=span:nth-child(3) > path-button-group .card-body",
+          "value": "",
+          "id": "9837cc53-69d4-4368-a2e4-e27d87496e4c",
+          "fallbackTargets": [
+            [
+              "css=span:nth-child(3) > path-button-group .card-body",
+              "css:finder"
+            ],
+            [
+              "xpath=(//path-framework[@id='app']/path-application/div/div/div/div/div/span[4]/span/span/path-list/span/span[3]/path-button-group/span/div/span/span/path-button/a/div)[1]",
+              "xpath:idRelative"
+            ]
+          ]
         }
       ]
     }

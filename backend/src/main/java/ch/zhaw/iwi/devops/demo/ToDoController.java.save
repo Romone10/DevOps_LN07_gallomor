@@ -36,7 +36,7 @@ public class ToDoController {
 
     @GetMapping("/test")
     public String test() {
-        return "ToDo app - by gallomor";
+        return "ToDo app";
     }
 
     @GetMapping("/services/ping")

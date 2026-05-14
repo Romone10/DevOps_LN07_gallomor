@@ -25,7 +25,7 @@ public class ToDoControllerTest {
     public void testTest() {
         var controller = new ToDoController();
         var result = controller.test();
-        assertTrue(result.contains("running"));
+        assertTrue(result.contains("app"));
     }
 
     @Test
